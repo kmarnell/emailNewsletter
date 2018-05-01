@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+    <style type="text/css">
+      a:hover{
+        color:#3e0e4c
+      }
+      @media screen and (max-width: 500px) {
+        table[class="responsive-table"] {
+          width: 100% !important;
+          padding: 10px 5%;
+        }
+        table[class="responsive-table2"] {
+          width: 100% !important;
+        }
+        img[class="responsive-image"] {
+          max-width: 100% !important;
+          height: auto !important;
+        }
+      }
+    </style>
+  </head>
+  <body style='background-color:#E0E0E0;padding:0;margin:0;font-family:"Roboto";color:#505050;'>
+    <!-- FULL WIDTH CONTAINER -->
+    <table width="100%" cellspacing="0" cellpadding="0" border="0">
+      <tr>
+        <td align="center">
+          <!-- 600px CONTAINER -->
+          <table class="responsive-table" width="500" cellspacing="0" cellpadding="0" border="0" style="background-color:#ffffff">
+            <!-- LOGO + DATE-->
+            <tr>
+              <td style="font-size:12px; padding:20px; margin-top:20px;display:inline-flex; justify-content: space-between; width: 90%; color:#C3C3C3">
+                <img width="100" height="50" src="./assets/Logo.png">
+                <p id="date"> </p>
+              </td>
+            </tr>
+            <script>
+              var d = new Date();
+              var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+              var this_month =  months[d.getMonth()]
+              var formated_month = this_month.concat(' ')
+              var this_year = d.getFullYear();
+              var dynamic_date = formated_month.concat(this_year);
+              document.getElementById("date").innerHTML = dynamic_date;
+            </script>
+            <!--END LOGO + DATE-->
+            <!-- Card 1 -->
+            <table class="responsive-table" width="500" cellspacing="0" cellpadding="0" border="0" style="background-color:#ffffff">
+              <tr>
+                <td class="card" style="font-size:28px; padding:20px; color:#062F4D">
+                  Lorem ipsum dolor sit amet, consectetuer
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img class="responsive-image" width="500" height="300" src="./assets/IntroPhoto.png"/>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding:15px;font-size:12px;line-height:2;">
+                  Donec quam felis, ultricies nex, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium
+                </td>
+              </tr>
+              <tr>
+                <td align="left" style="padding:20px; font-size:12px;padding-bottom: 40px">
+                  <a href="http://www.example.com" target="_blank" style="color:#AAB4BB;color:#17B95D; text-decoration: none ;">Continue reading...</a>
+                </td>
+              </tr>
+            </table>
+            <!-- CARD2 + BUTTON-->
+            <table class="responsive-table" width="500" cellspacing="0" cellpadding="0" border="0" style="background-color:white; margin: 30px">
+              <tr>
+                <td>
+                  <img class="responsive-image" width="500" height="300" src="./assets/Skyline.png"/>
+              </td>
+              </tr>
+              <tr>
+                <td align="center" style="font-size:28px;padding:15px;color:#062F4D">
+                  Introducing Kong Enterprise
+                </td>
+              </tr>
+              <tr>
+                <td align="center" style="padding:15px;font-size:18px">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor
+              </td>
+              </tr>
+              <tr>
+                <td align="center" style="padding:20px;">
+                  <a href="http://www.example.com" target="blank" style="color:#AAB4BB;padding-top:5px;padding-bottom:5px;padding-right:10px;padding-left:10px;display:block;text-decoration:none;text-align:center;font-size:13px;font-family:'Roboto';line-height:30px;color:#ffffff;background-color:#17A956; border-radius:3px;">Continue reading </a>
+                </td>
+              </tr>
+            </table>
+            <!-- Card3 -->
+            <table class="responsive-table2" width="500" cellspacing="0" cellpadding="0" border="0" style="background-color:#ffffff; margin: 30px">
+              <tr>
+                <td align="center">
+                  <img class="responsive-image" width="400" height="300" style="margin-top: 10px" src="./assets/Kong.png"/>
+              </td>
+              </tr>
+              <tr>
+                <td style="font-size:26px;padding:20px;color:#062F4D;font-weight:500">
+                  Kong Enterprise 0.29 Released
+              </td>
+              </tr>
+              <tr>
+                <td style="line-height:2; padding:15px;font-size:12px;">
+                  A new Kong Enterprise release is now shipping and it's chock full of powerful enterprise features and services. Explore how the new Vitals analytics and monitoring interface, a new Forward Proxy plugin and improved Proxy Caching plugin improve API operations.
+              </td>
+              </tr>
+              <tr>
+                <td align="left" style="padding:20px; font-size:12px;">
+                  <a href="http://www.example.com" target="_blank" style="color:#AAB4BB;color:#17B95D; font-weight: bold; text-decoration: none ;">Continue reading...</a>
+                </td>
+              </tr>
+            </table>
+            <!-- Card4 -->
+            <table class="responsive-table2" width="500" cellspacing="0" cellpadding="0" border="0" style="background-color:#ffffff; margin: 10px">
+              <tr>
+                <td style="font-size:26px;padding:25px;color:#062F4D;font-weight:500">
+                  See Kong Upcoming Live Webinars
+              </td>
+                <!-- Line Break -->
+              </tr>
+              <tr>
+                <td>
+                  <hr width="500" align="center" style="border-top: 0px solid #E0E0E0;">
+                </td>
+              </tr>
+              <!-- Inner Table -->
+              <tr>
+                <td>
+                  <table width="100" align="left" cellspacing="0" cellpadding="0" border="0" style="padding:15px">
+                    <tr>
+                      <td>
+                        <img class="responsive-image" width="50" height="50" style="padding-left:20px;" src="./assets/WebinarIcon.png"/>
+                      </td>
+                    </tr>
+                  </table>
+                  <table width="400" align="right">
+                    <tr>
+                      <td style="line-height:1.5; padding:15px;font-size:12px;">
+                        <span style="color:#17B95D;font-size: 14px">Introduction to Kong Community Edition</span>
+                        <p style="font-weight: bold">
+                          Tuesday, October 17 @ 9am Pacific
+                          </p>
+                        <p>
+                          Learn how to from zero to productive with the world's most popular open source API gateway.
+                          </p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <!-- Line Break -->
+              <tr>
+                <td>
+                  <hr width="500" align="center" style="border-top: 0px solid #E0E0E0;">
+                </td>
+              </tr>
+              <!-- Inner Table -->
+              <tr>
+                <td>
+                  <table width="100" align="left" cellspacing="0" cellpadding="0" border="0" style="padding:15px">
+                    <tr>
+                      <td>
+                        <img class="responsive-image" width="50" height="50" style="padding-left: 20px" src="./assets/WebinarIcon.png"/>
+                    </td>
+                    </tr>
+                  </table>
+                  <table width="400" align="right">
+                    <tr>
+                      <td style="line-height:1.5; padding:15px;font-size:12px;">
+                        <span style="color:#17B95D;font-size: 14px">Using Kong Enterprise Edition</span>
+                        <p style="font-weight: bold;">
+                          Wednesday, October 18 @ 9am Pacific
+                       </p>
+                        <p>
+                          See a demonstration of Role-based Access Control, Point-and-Click Administration, Addvanced Rate limiting and more. 
+                      </p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <!-- FOOTER -->
+            <table class="responsive-table2" width="500" cellspacing="0" cellpadding="0" border="0">
+              <tr>
+                <td>
+                  <p style="margin:0;margin-top:0px;font-size:13px;line-height:20px;margin-bottom:16px">As always you're invited to <span style="color: #17B95D">contribute</span> to the Kong project by <span style="color: #17B95D">opening issues,</span> submitting <span style="color: #17B95D">pull requests</span>, and <span style="color: #17B95D">chatting</span> with the core maintainers and the Kong community. 
+                </p>
+                  <div style="margin:0;margin-top:0px;font-size:13px;line-height:5px;margin-bottom:0px">
+                    <p>
+                      Cheers, 
+                  </p>
+                    <p>
+                      &#8212;The Kong Team 
+                  </p>
+                  </div>
+                </td>
+              </tr>
+              <!-- SOCIAL MEDIA -->
+              <div id="social-media" style="width:100%;max-width:300px;display:inline-block;vertical-align:bottom;">
+                <table width="15%" border="0" cellspacing="0" cellpadding="0" style="border-spacing:0;font-family:sans-serif, 'Roboto';">
+                  <tr>
+                    <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
+                      <a href="https://www.facebook.com/konghq/" target="_blank" style="color:#AAB4BB;"><i class="fab fa-facebook"></i></a>
+                    </td>
+                    <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
+                      <a href="https://twitter.com/thekonginc" target="_blank" style="color:#AAB4BB;"> <i class="fab fa-twitter"></i></a>
+                    </td>
+                    <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
+                      <a href="https://www.meetup.com/topics/kong/all/" target="_blank" style="color:#AAB4BB;"> <i class="fab fa-meetup"></i> </a>
+                    </td>
+                    <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
+                      <a href="https://github.com/kong/kong" target="_blank" style="color:#AAB4BB;"> <i class="fab fa-github"></i> </a>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div align="center">
+                <p style="font-size:11px;line-height:20px;color:#A3A4A5"><strong>Kong Inc.</strong> 251 Post Street 2nd Floor, San Francisco, CA 94108</p>
+                <p style="font-size:13px;font-size:11px;margin-bottom:0px;"><a href="http://www.example.com" target="blank" style="color:#AAB4BB;text-decoration:underline;color:#A3A4A5;">Unsubscribe</a>
+                </p>
+                <div>
+                </div>
+              </div>
+            </table>
+            <!-- END FOOTER -->
+          </table>
+          <!-- END 600px CONTAINER -->
+        </td>
+      </tr>
+    </table>
+    <!--END FULL WIDTH CONTAINER -->
+  </body>
+</html>
